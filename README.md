@@ -24,4 +24,23 @@ Agradecemos especialmente ao ChatGPT, pela assistência no desenvolvimento de co
 Estamos sempre abertos a contribuições para melhorar nosso site. Se você tiver sugestões ou quiser contribuir com código, por favor, sinta-se à vontade para criar um pull request ou abrir um issue.
 
 
+## ⚙️ Melhorias Futuras
+
+Este projeto de site foi inicialmente desenvolvido como parte de um trabalho de faculdade, com o objetivo de demonstrar habilidades práticas em desenvolvimento web. Enquanto o site atual oferece uma sólida base visual e informativa, planejamos uma série de melhorias para aumentar sua funcionalidade e usabilidade:
+
+- **Funcionalidade Total**: Pretendemos implementar backend funcionalidades que permitirão interações dinâmicas no site, como formulários de contato funcionais, sistemas de reserva e gerenciamento de consultas.
+- **Responsividade Aprimorada**: Embora o site já seja visualmente agradável, a adaptação completa para dispositivos móveis é crucial. Vamos trabalhar para garantir que o site seja totalmente responsivo, oferecendo uma excelente experiência de usuário em todos os dispositivos e tamanhos de tela.
+- **Integração de API**: Planejamos integrar APIs que permitirão a incorporação de mapas, sistemas de pagamento e outras funcionalidades interativas para enriquecer a experiência do usuário.
+- **Otimização de SEO**: Para melhorar a visibilidade do site nos motores de busca, focaremos na otimização de SEO, ajustando o conteúdo do site, melhorando as tags meta e utilizando as melhores práticas de SEO.
+- **Acessibilidade**: Aumentar a acessibilidade do site para garantir que todos os usuários, incluindo aqueles com deficiências, possam navegar facilmente pelo site.
+
+Estas melhorias não só aumentarão a funcionalidade do site, mas também garantirão que ele atenda aos padrões modernos de desenvolvimento web e usabilidade.
+
+## 📚 Contexto Acadêmico
+
+É importante notar que este projeto foi criado como um trabalho acadêmico para REGES, refletindo o aprendizado e as habilidades adquiridas no curso de SISTEMAS_WEB_I.
+
+
+
+
 
