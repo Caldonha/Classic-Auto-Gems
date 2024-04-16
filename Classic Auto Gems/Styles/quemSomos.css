@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    background-color: #FFFDD0;
+}
+
+
+/* Parte da navbar */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background: rgba(128, 0, 32, 0.8);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    /* Assegure que a <ul> ocupe toda a largura do .navbar */
+}
+
+.navbar ul li {
+    position: relative;
+    flex: 1;
+    text-align: left;
+    margin-left: 50px;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFDD0;
+    padding: 10px;
+}
+
+.navbar ul li a:hover {
+    color: #DAA520;
+}
+
+.tamanho {
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: 2;
+}
+
+
+.entrada {
+    width: 100%;
+    height: 100vh;
+    background-image: url(Fundo/quem\ somos.webp);
+    background-position: center top;
+    background-size: cover;
+    opacity: 80%;
+}
+
+
+
+
+/* Container das partes do site */
+
+#container {
+
+    width: 100%;
+    height: 800px;
+    padding: 10px 0px;
+}
+
+
+#margincontainer{
+    margin-bottom: 150px;
+}
+
+.titulo {
+    font-size: 25px;
+    color: #423628;
+    margin: auto;
+    text-align: center;
+
+}
+
+/* Quadrado que esta a imagem de Quem Somos */
+
+.quemSomos {
+
+    width: 600px;
+    height: 450px;
+    margin-left: 10px;
+    margin-top: 100px;
+    overflow: hidden;
+    float: left;
+
+}
+
+.quemSomos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+
+/* Parte do Texto de Quem Somos */
+
+.quemSomosTexto {
+    width: 50%;
+
+    float: left;
+    margin-top: 60px;
+    margin-left: 40px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #423628;
+}
+
+.quemSomosTexto h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #36454F;
+}
+
+.quemSomosTexto p {
+    margin-bottom: 20px;
+}
+
+
+
+
+/* Parte que a imagem esta direita de histora */
+
+/* Quadrado que esta a imagem de Historia */
+
+.historia {
+
+    width: 600px;
+    height: 450px;
+    margin-left: 60px;
+    margin-top: 75px;
+    overflow: hidden;
+    float: left;
+
+}
+
+.historia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15%;
+}
+
+
+/* Parte do Texto de Historia*/
+
+.historiaTexto {
+    width: 40%;
+
+    float: left;
+    margin-top: 60px;
+    margin-left: 40px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #423628;
+}
+
+.historiaTexto h2 {
+    font-size: 28px;
+    font-weight: bold;
+
+    color: #36454F;
+}
+
+.historiaTexto p {
+    margin-bottom: 30px;
+}
+
+
+/* Parte que a imagem esta direita de histora */
+
+
+
+/* Quadrado que esta a imagem  */
+
+.historiaD {
+
+    width: 600px;
+    height: 450px;
+    margin-left: 15px;
+    overflow: hidden;
+    float: left;
+
+}
+
+.historiaD img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+
+/* Parte do Texto de Quem Somos */
+
+.historiaDTexto {
+    width: 40%;
+    float: left;
+    
+    margin-left: 40px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #423628;
+}
+
+.historiaDTexto h2 {
+    font-size: 28px;
+    font-weight: bold;
+    
+    color: #36454F;
+}
+
+.historiaDTexto p {
+    color:#423628;
+}
+
+
+
+
+
+/* Parte que a imagem esta direita de Fundador */
+
+/* Quadrado que esta a imagem  */
+
+.fundador {
+
+    width: 600px;
+    height: 450px;
+    margin-left: 20px;
+    margin-top: 65px;
+    overflow: hidden;
+    float: left;
+
+}
+
+.fundador img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15%;
+}
+
+
+/* Parte do Texto do Fundador*/
+
+.fundadorTexto {
+    width: 40%;
+
+    float: left;
+    margin-top: 60px;
+    margin-left: 40px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #423628;
+}
+
+.fundadorTexto h2 {
+    font-size: 28px;
+    font-weight: bold;
+
+    color: #36454F;
+}
+
+.fundadorTexto p {
+    margin-bottom: 50px;
+}
+
+
+/* Parte que a imagem esta esquerda do Fundador */
+
+
+
+/* Quadrado que esta a imagem  */
+
+.cofundador {
+
+    width: 600px;
+    height: 450px;
+    margin-left: 15px;
+   
+    overflow: hidden;
+    float: left;
+
+}
+
+.cofundador img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+
+/* Parte do Texto do  Co-Fundador*/
+
+.cofundadorTexto {
+    width: 40%;
+    float: left;
+    margin-left: 40px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #423628;
+}
+
+.cofundadorTexto h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #36454F;
+    text-align: center;
+}
+
+.cofundadorTexto p {
+    color:#423628;
+}
+
+
+
+
+
+
+
+
+
+
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #FFFDD0;  
+    color: #423628;  
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}

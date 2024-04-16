@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  background-color: #cccaa9;
+}
+
+
+/* Parte da navbar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background: rgba(128, 0, 32, 0.8);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  /* Assegure que a <ul> ocupe toda a largura do .navbar */
+}
+
+.navbar ul li {
+  position: relative;
+  flex: 1;
+  text-align: left;
+  margin-left: 50px;
+ 
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFDD0;
+  padding: 10px;
+}
+
+.navbar ul li a:hover {
+  color: #DAA520;
+}
+
+.tamanho {
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  z-index: 2;
+}
+
+.loja {
+  width: 100%;
+  height: 100vh;
+  background-image: url(Fundo/loja.webp);
+  background-position: center top;
+  background-size: cover;
+  opacity: 80%;
+}
+
+
+  /* Container das partes do site */
+
+  #container {
+
+    width: 100%;
+    height: 300px;
+    padding: 10px 0px;
+  }
+
+
+/* Titulo Loja */
+  .titulo {
+    font-size: 25px;
+    color: #423628;
+    margin: auto;
+    text-align: center;
+
+  }
+
+
+  /* From uiverse.io by @FrM-bot */
+
+ .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os cards */
+}
+
+.card {
+    width: 500px;
+    height: min-content;
+    transition: all .3s;
+    position: relative;
+    border-radius: .5rem 2rem;
+    box-shadow: 0px 15px 20px -5px rgba(0, 0, 0, 0.5);
+    margin: 10px; 
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.img-container {
+    display: grid;
+    border-radius: .5rem 2rem;
+    height: 270px;
+    overflow: hidden;
+}
+
+.description {
+  position: absolute;
+  bottom: 0; 
+  left: 0; 
+  text-align: center;
+  padding: .5rem 1em; 
+  width: 90%; 
+  transition: all 0.5s ease;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  backdrop-filter: blur(.1rem);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: .5rem 2rem;
+}
+
+
+.description:hover {
+    transform: perspective(100px) translateX(7px) rotateX(3deg) rotateY(3deg) scale(1);
+    box-shadow: none;
+}
+
+.title {
+    color: #FFFDD0;
+    font-weight: bold
+}
+
+h4{
+ 
+  color: #423628;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 50px;
+  width:80%;
+
+}
+
+
+
+
+
+
+
+/* Parte das Imagens de cada card */
+
+/* Imagem Card 1*/
+
+.img {
+  transition: all .3s;
+ background-image: url(Fundo/Carros/Chevrolet\ Opala\ SS\,.webp);
+ background-position: center;
+ background-size: cover;
+  width: 100%;
+}
+
+
+.img:hover {
+  transform: scale(1.3);
+}
+
+
+
+
+/* Imagem Card 2*/
+
+.img2 {
+  transition: all .3s;
+ background-image: url(Fundo/Carros/Cevelle\ ss.webp);
+ background-position: center;
+ background-size: cover;
+  width: 100%;
+}
+
+
+.img2:hover {
+  transform: scale(1.3);
+}
+
+
+
+
+
+/* Imagem Card 3*/
+
+.img3 {
+  transition: all .3s;
+ background-image: url(Fundo/Carros/Ford\ Mustang\ 1967.webp);
+ background-position: center;
+ background-size: cover;
+  width: 100%;
+}
+
+
+.img3:hover {
+  transform: scale(1.3);
+}
+
+
+
+
+/* Imagem Card 4*/
+
+.img4 {
+  transition: all .3s;
+ background-image: url(Fundo/Carros/AC\ Cobra.webp);
+ background-position: center;
+ background-size: cover;
+  width: 100%;
+}
+
+
+.img4:hover {
+  transform: scale(1.3);
+}
+
+
+
+/* Imagem Card 5*/
+
+.img5 {
+  transition: all .3s;
+ background-image: url(Fundo/Carros/Alfa\ Romeo\ Giulia\ Spider.webp);
+ background-position: center;
+ background-size: cover;
+  width: 100%;
+}
+
+
+.img5:hover {
+  transform: scale(1.3);
+}
+
+
+
+
+/* Imagem Card 6*/
+
+.img6 {
+  transition: all .3s;
+ background-image: url(Fundo/Carros/Ford\ GT40.webp);
+ background-position: center;
+ background-size: cover;
+  width: 100%;
+}
+
+
+.img6:hover {
+  transform: scale(1.3);
+}
+
+
+
+
+/* Imagem Card 7*/
+
+.img7 {
+  transition: all .3s;
+ background-image: url(Fundo/Carros/jaguar\ E-Type.webp);
+ background-position: center;
+ background-size: cover;
+  width: 100%;
+}
+
+
+.img7:hover {
+  transform: scale(1.3);
+}
+
+
+
+
+/* Imagem Card 8*/
+
+.img8 {
+  transition: all .3s;
+ background-image: url(Fundo/Carros/Lamborghini\ Miura.webp);
+ background-position: center;
+ background-size: cover;
+  width: 100%;
+}
+
+
+.img8:hover {
+  transform: scale(1.3);
+}
+
+
+
+
+/* Imagem Card 9*/
+
+.img9 {
+  transition: all .3s;
+ background-image: url(Fundo/Carros/Lotus\ Esprit.webp);
+ background-position: center;
+ background-size: cover;
+  width: 100%;
+}
+
+
+.img9:hover {
+  transform: scale(1.3);
+}
+
+
+
+
+/* Imagem Card 10*/
+
+.img10 {
+  transition: all .3s;
+ background-image: url(Fundo/Carros/Maserati\ Ghibli.webp);
+ background-position: center;
+ background-size: cover;
+  width: 100%;
+}
+
+
+.img10:hover {
+  transform: scale(1.3);
+}
+
+
+
+
+/* Imagem Card 11*/
+
+.img11 {
+  transition: all .3s;
+ background-image: url(Fundo/Carros/Mercedes-Benz\ 300SL\ Gullwing.webp);
+ background-position: center;
+ background-size: cover;
+  width: 100%;
+}
+
+
+.img11:hover {
+  transform: scale(1.3);
+}
+
+
+
+
+/* Imagem Card 12*/
+
+.img12 {
+  transition: all .3s;
+ background-image: url(Fundo/Carros/Porsche\ 356.webp);
+ background-position: center;
+ background-size: cover;
+  width: 100%;
+}
+
+
+.img12:hover {
+  transform: scale(1.3);
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #cccaa9;  
+  color: #423628;  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+  margin-top: 50px;
+}

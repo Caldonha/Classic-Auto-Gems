@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  background-color: #FFFDD0;
+}
+
+/* Parte da navbar */
+
+/* Parte da navbar */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background: rgba(128, 0, 32, 0.8);
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    /* Assegure que a <ul> ocupe toda a largura do .navbar */
+  }
+  
+  .navbar ul li {
+    position: relative;
+    flex: 1;
+    text-align: left;
+    margin-left: 50px;
+   
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFDD0;
+    padding: 10px;
+  }
+  
+  .navbar ul li a:hover {
+    color: #DAA520;
+  }
+  
+  .tamanho {
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: 2;
+  }
+
+
+
+/* Container das partes do site */
+
+#container {
+
+  width: 100%;
+  height: 800px;
+  padding: 10px 0px;
+}
+
+.margin{
+    margin-top: 300px;
+}
+
+/* Parte de Quem Somos */
+
+.titulo {
+  font-size: 25px;
+  color: #423628;
+  margin: auto;
+  margin-bottom: 100px;
+  text-align: center;
+
+}
+
+/* Quadrado que esta a imagem de Quem Somos */
+
+
+.historia {
+
+  width: 600px;
+    height: 450px;
+    margin-left: 10px;
+    margin-top: 180px;
+    overflow: hidden;
+    float: left;
+
+}
+
+.historia img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+.historiaPorsche img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+
+/* Parte do Texto de Quem Somos */
+
+.historiaTexto {
+  width: 50%;
+    
+    float: left;
+    margin-top: 0px;
+    margin-left: 40px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #423628;
+}
+
+.historiaTexto h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #36454F;
+}
+
+.historiaTexto p {
+  margin-bottom: 20px;
+}
+
+
+
+
+/* Parte dos Melhores Carros */
+
+
+/* Parte de escrita abaixo dos Cards */
+
+.baixo {
+  font-size: 25px;
+  color: #423628;
+  margin: auto;
+  text-align: center;
+  position: relative;
+   margin-top: 65px;
+
+}
+
+
+/* Parte que esta centralizando os cards */
+
+.containerCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+
+/* Imagem da frente do Primeiro card */
+
+.ImgCard1 {
+  background-image: url(Fundo/pecas/performance.webp);
+  background-position: center;
+  background-size: cover;
+
+
+}
+
+/* Imagem da frente do Card do meio  */
+
+.ImgCard2 {
+  background-image: url(Fundo/pecas/motor.webp);
+  background-position: center;
+  background-size: cover;
+
+}
+
+/* Imagem da frente do Ultimo card */
+
+.ImgCard3 {
+  background-image: url(Fundo/pecas/transmissão.webp);
+  background-position: center;
+  background-size: cover;
+
+}
+
+/* Cards de Baixo */
+
+/* Imagem da frente do Primeiro card */
+
+
+.ImgCard4 {
+    background-image: url(Fundo/pecas/dimensao.webp) ;
+    background-position: center;
+    background-size: cover;
+  
+  
+  }
+  
+  /* Imagem da frente do Card do meio  */
+  
+  .ImgCard5 {
+    background-image: url(Fundo/pecas/peso.webp);
+    background-position: center;
+    background-size: cover;
+  
+  }
+  
+  /* Imagem da frente do Ultimo card */
+  
+  .ImgCard6 {
+    background-image: url(Fundo/pecas/suspensao.webp);
+    background-position: center;
+    background-size: cover;
+  
+  }
+
+
+
+/* Parte da frente do Card */
+
+.card {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #DAA520;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin-top: 1px;
+  margin: 35px;
+  margin-bottom: 1px;
+}
+
+/* Parte de Tras do Card */
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #DAA520;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+/* Parte da animação do Card */
+
+.card svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+
+.card:hover svg {
+  scale: 0;
+}
+
+
+/* Parte que modifica a escrita dentro do Cart */
+
+.card h2 {
+  font-size: 30px;
+  color: #423628;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+.card ul li {
+  font-size: 20px;
+  color: #423628;
+  margin: auto;
+  margin-bottom: 10px;
+
+
+}
+
+
+
+
+
+/* Parte de Serviços */
+
+.tituloinformaçoes{
+  font-size: 25px;
+  color: #423628;
+  margin: auto;
+  text-align: center;
+  margin-top: 80px;
+
+}
+
+
+/* Quadrado que esta a imagem de Quem Somos */
+
+.informaçoes {
+
+  width: 600px;
+  height: 450px;
+  margin-left: 60px;
+  margin-top: 50px;
+  overflow: hidden;
+  float: left;
+
+}
+
+.informaçoes img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+
+/* Parte do Texto de Serviço */
+
+.informaçoesTexto{
+  width: 40%;
+  height: 450px;
+  float: left;
+
+  margin-left: 60px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #423628;
+}
+
+.informaçoesTexto h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #36454F;
+  text-align: center;
+}
+
+.informaçoesTexto h3 {
+ 
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #36454F;
+  text-align: center;
+}
+
+.informaçoesTexto ul li {
+  font-size: 17px;
+ 
+  margin-bottom: 20px;
+  color: #423628;
+  list-style: none;
+  margin-left: 85px;
+
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #FFFDD0;  
+  color: #423628;  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+
+}
+
+
+
+/* Parte da entrada dos carros */
+
+.chevelle {
+  width: 100%;
+  height: 100vh;
+  background-image: url(Fundo/Carros/Cevelle\ ss.webp);
+  background-position: center top;
+  background-size: cover;
+  opacity: 80%;
+}
+
+/* Parte da Opala SS*/
+
+.opalass{
+  width: 100%;
+  height: 100vh;
+  background-image: url(Fundo/Carros/Chevrolet\ Opala\ SS\,.webp);
+  background-position: center top;
+  background-size: cover;
+  opacity: 80%;
+
+}
+
+
+.historiaOpala{
+  width: 600px;
+  height: 450px;
+  margin-left: 10px;
+  margin-top: 55px;
+  overflow: hidden;
+  float: left;
+}
+
+
+.historiaOpala img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+/* Parte da Mustang 1967*/
+
+.mustang1967{
+  width: 100%;
+  height: 100vh;
+  background-image: url(Fundo/Carros/Ford\ Mustang\ 1967.webp);
+  background-position: center top;
+  background-size: cover;
+  opacity: 80%;
+}
+
+.historiaMustang{
+  width: 600px;
+  height: 450px;
+  margin-left: 10px;
+  margin-top: 100px;
+  overflow: hidden;
+  float: left;
+}
+
+
+.historiaMustang img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+
+/* Parte da AC Cobra*/
+
+.accobra{
+  width: 100%;
+  height: 100vh;
+  background-image: url(Fundo/Carros/AC\ Cobra.webp);
+  background-position: center top;
+  background-size: cover;
+  opacity: 80%;
+}
+
+
+.historiaAc{
+  width: 600px;
+  height: 450px;
+  margin-left: 10px;
+  margin-top: 40px;
+  overflow: hidden;
+  float: left;
+}
+
+
+.historiaAc img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+}
+ 
+
+/* Parte da Alfa Romeo Giulia Spider */
+
+.alfaromeo{
+
+  width: 100%;
+  height: 100vh;
+  background-image: url(Fundo/Carros/Alfa\ Romeo\ Giulia\ Spider.webp);
+  background-position: center top;
+  background-size: cover;
+  opacity: 80%;
+}
+
+.historiaAlfa{
+  width: 600px;
+  height: 450px;
+  margin-left: 10px;
+  margin-top: 50px;
+  overflow: hidden;
+  float: left;
+}
+
+
+.historiaAlfa img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+/* Parte da Ford GT40*/
+
+.fordgt40{
+
+  width: 100%;
+  height: 100vh;
+  background-image: url(Fundo/Carros/Ford\ GT40.webp);
+  background-position: center top;
+  background-size: cover;
+  opacity: 80%;
+
+}
+
+
+.historiagt40{
+  width: 600px;
+  height: 450px;
+  margin-left: 10px;
+  margin-top: 50px;
+  overflow: hidden;
+  float: left;
+}
+
+
+.historiagt40 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+/* Parte da jaguar E-Type */
+
+.jaguar{
+  width: 100%;
+  height: 100vh;
+  background-image: url(Fundo/Carros/jaguar\ E-Type.webp);
+  background-position: center top;
+  background-size: cover;
+  opacity: 80%;
+}
+
+.historiaJaguar{
+  width: 600px;
+  height: 450px;
+  margin-left: 10px;
+  margin-top: 30px;
+  overflow: hidden;
+  float: left;
+}
+
+
+.historiaJaguar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+/* Parte da Lamborghini Miura */
+
+.lamborghinimiura{
+  width: 100%;
+  height: 100vh;
+  background-image: url(Fundo/Carros/Lamborghini\ Miura.webp);
+  background-position: center top;
+  background-size: cover;
+  opacity: 80%;
+}
+
+.historiaLamborghini{
+  width: 600px;
+  height: 450px;
+  margin-left: 10px;
+  margin-top: 25px;
+  overflow: hidden;
+  float: left;
+}
+
+
+.historiaLamborghini img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+/* Parte da Lotus Esprit */
+
+.lotus{
+  width: 100%;
+  height: 100vh;
+  background-image: url(Fundo/Carros/Lotus\ Esprit.webp);
+  background-position: center top;
+  background-size: cover;
+  opacity: 80%;
+}
+
+.historiaLotus{
+  width: 600px;
+  height: 450px;
+  margin-left: 10px;
+  margin-top: 25px;
+  overflow: hidden;
+  float: left;
+}
+
+
+.historiaLotus img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+/* Parte da Maserati Ghibli */
+
+.maseratighibli{
+  width: 100%;
+  height: 100vh;
+  background-image: url(Fundo/Carros/Maserati\ Ghibli.webp);
+  background-position: center top;
+  background-size: cover;
+  opacity: 80%;
+}
+
+.historiaMaserat{
+  width: 600px;
+  height: 450px;
+  margin-left: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+  float: left;
+}
+
+
+.historiaMaserat img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+/* Parte da Mercedes-Benz 300SL Gullwing */
+
+
+.historiaMercedes{
+  width: 600px;
+  height: 450px;
+  margin-left: 10px;
+  margin-top: 40px;
+  overflow: hidden;
+  float: left;
+}
+
+
+.historiaMercedes img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+.mercedes-benz{
+
+  width: 100%;
+  height: 100vh;
+  background-image: url(Fundo/Carros/Mercedes-Benz\ 300SL\ Gullwing.webp);
+  background-position: center top;
+  background-size: cover;
+  opacity: 80%;
+}
+
+
+/* Parte da Porscher 356*/
+
+.porsche356{
+  width: 100%;
+  height: 100vh;
+  background-image: url(Fundo/Carros/Porsche\ 356.webp);
+  background-position: center top;
+  background-size: cover;
+  opacity: 80%;
+}
+
+.historiaPorsche{
+  width: 600px;
+  height: 450px;
+  margin-left: 10px;
+  margin-top: 30px;
+  overflow: hidden;
+  float: left;
+}
+
+
+.historiaPorsche img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+}

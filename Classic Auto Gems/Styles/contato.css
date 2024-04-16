@@ -1,0 +1,111 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  background:url(Fundo/Contato.png) no-repeat;
+    background-size: cover;
+}
+
+
+.cotainer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 550px;
+  background: rgba(0,0,0,0.8);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.cotainer .titulo h1{
+  color: #DAA520;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contato-formulario{
+  display: flex;
+}
+
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fields,
+.msg{
+  width: 48%;
+}
+
+.input-fields .input,
+.msg textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #FFFDD0;
+  padding: 10px;
+  color: #FFFDD0;
+  width: 100%;
+}
+
+.msg textarea{
+  height: 212px;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #FFFDD0;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #FFFDD0;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #FFFDD0;
+}
+
+.btn {
+    background: #FFFDD0;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #36454F;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields,
+  .msg{
+    width: 100%;
+  }
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #FFFDD0;  
+    color: #423628;  
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}

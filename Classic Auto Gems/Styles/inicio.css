@@ -1,0 +1,457 @@
+  @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    background-color: #FFFDD0;
+  }
+
+  /* Parte da navbar */
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background: rgba(128, 0, 32, 0.8);
+  }
+
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    /* Assegure que a <ul> ocupe toda a largura do .navbar */
+  }
+
+  .navbar ul li {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    /* Isso centraliza o texto dentro dos <li> */
+  }
+
+  .navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFDD0;
+    padding: 10px;
+  }
+
+  .navbar ul li a:hover {
+    color: #DAA520;
+  }
+
+  .tamanho {
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: 2;
+  }
+
+  .navbar ul li:nth-child(3) {
+    margin-right: -20px;
+  }
+
+
+  .navbar ul li:nth-child(2) {
+    margin-left: -20px;
+  }
+
+
+
+  /* Parte da entrada do site */
+
+  .entrada {
+    width: 100%;
+    height: 100vh;
+    background-image: url(Fundo/imagem\ de\ entrada.jpg);
+    background-position: center top;
+    background-size: cover;
+    opacity: 80%;
+  }
+
+
+
+
+
+
+  /* Container das partes do site */
+
+  #container {
+
+    width: 100%;
+    height: 800px;
+    padding: 10px 0px;
+  }
+
+
+  /* Parte de Quem Somos */
+
+  .tituloQuemSomos {
+    font-size: 25px;
+    color: #423628;
+    margin: auto;
+    text-align: center;
+
+  }
+
+  /* Quadrado que esta a imagem de Quem Somos */
+
+  .quemSomos {
+
+    width: 600px;
+    height: 450px;
+    margin-left: 10px;
+    margin-top: 50px;
+    overflow: hidden;
+    float: left;
+
+  }
+
+  .quemSomos img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+  }
+
+
+  /* Parte do Texto de Quem Somos */
+
+  .quemSomosTexto {
+    width: 50%;
+    
+    float: left;
+    margin-top: 0px;
+    margin-left: 40px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #423628;
+  }
+
+  .quemSomosTexto h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #36454F;
+  }
+
+  .quemSomosTexto p {
+    margin-bottom: 20px;
+  }
+
+
+
+
+  /* Parte dos Melhores Carros */
+
+
+  /* Titulo da Parte Melhores Carros */  
+
+  .tituloCarros {
+    font-size: 25px;
+    color: #423628;
+    margin: auto;
+    text-align: center;
+    position: relative;
+
+  }
+
+  /* Parte de escrita abaixo dos Cards */
+
+  .baixoCarros {
+    font-size: 25px;
+    color: #423628;
+    margin: auto;
+    text-align: center;
+    position: relative;
+     margin-top: 65px;
+
+  }
+
+
+  /* Parte que esta centralizando os cards */
+
+  .containerCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+
+  /* Imagem da frente do Primeiro card */
+
+  .ImgCard1 {
+    background-image: url(Fundo/Carros/Chevrolet\ Opala\ SS\,.webp);
+    background-position: center;
+    background-size: cover;
+
+
+  }
+
+  /* Imagem da frente do Card do meio  */
+
+  .ImgCard2 {
+    background-image: url(Fundo/Carros/Cevelle\ ss.webp);
+    background-position: center;
+    background-size: cover;
+
+  }
+
+  /* Imagem da frente do Ultimo card */
+
+  .ImgCard3 {
+    background-image: url(Fundo/Carros/Ford\ Mustang\ 1967.webp);
+    background-position: center;
+    background-size: cover;
+
+  }
+
+
+
+  /* Parte da frente do Card */
+
+  .card {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #DAA520;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin-top: 1px;
+    margin: 15px;
+    margin-bottom: 1px;
+  }
+
+  /* Parte de Tras do Card */
+
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #DAA520;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+
+  /* Parte da animação do Card */
+  
+  .card svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+
+
+  .card:hover svg {
+    scale: 0;
+  }
+  
+
+/* Parte que modifica a escrita dentro do Cart */
+
+  .card h2 {
+    font-size: 30px;
+    color: #423628;
+    margin: auto;
+    text-align: center;
+    position: relative;
+  }
+
+  .card ul li {
+    font-size: 25px;
+    color: #423628;
+    margin: auto;
+
+
+  }
+
+
+
+
+
+  /* Parte de Serviços */
+
+  .tituloServico {
+    font-size: 25px;
+    color: #423628;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+    
+
+  }
+
+
+ /* Quadrado que esta a imagem de Quem Somos */
+
+ .servico {
+
+  width: 600px;
+  height: 450px;
+  margin-left: 60px;
+  margin-top: 50px;
+  overflow: hidden;
+  float: left;
+
+}
+
+.servico img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+
+/* Parte do Texto de Serviço */
+
+.servicoTexto {
+  width: 40%;
+  height: 450px;
+  float: left;
+
+  margin-left: 60px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #423628;
+}
+
+.servicoTexto h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #36454F;
+  text-align: center;
+}
+
+.servicoTexto h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #36454F;
+  text-align: center;
+}
+
+
+.servicoTexto ul li {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #423628;
+  list-style: none;
+
+}
+
+
+
+
+
+
+  /* Botao Saiba mais */
+  .cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #FFFDD0;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+  }
+
+  .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #423628;
+  }
+
+  .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #423628;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+
+  .cta:hover:before {
+    width: 100%;
+    background: #DAA520;
+  }
+
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+
+  .cta:active {
+    transform: scale(0.95);
+  }
+
+
+
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #FFFDD0;  
+    color: #423628;  
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}

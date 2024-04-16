@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    background-color: #FFFDD0;
+}
+
+
+/* Parte da navbar */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background: rgba(128, 0, 32, 0.8);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    /* Assegure que a <ul> ocupe toda a largura do .navbar */
+}
+
+.navbar ul li {
+    position: relative;
+    flex: 1;
+    text-align: left;
+    margin-left: 50px;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFDD0;
+    padding: 10px;
+}
+
+.navbar ul li a:hover {
+    color: #DAA520;
+}
+
+.tamanho {
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: 2;
+}
+
+
+.entrada {
+    width: 100%;
+    height: 100vh;
+    background-image: url(Fundo/servico.webp);
+    background-position: center top;
+    background-size: cover;
+    opacity: 80%;
+}
+
+
+
+
+#container {
+
+    width: 100%;
+    height: 700px;
+    padding: 10px 0px;
+}
+
+
+#margincontainer{
+    margin-bottom: 150px;
+}
+
+.titulo {
+    font-size: 25px;
+    color: #423628;
+    margin: auto;
+    text-align: center;
+
+}
+
+
+
+.servico {
+
+    width: 600px;
+    height: 450px;
+    margin-left: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+    float: left;
+
+}
+
+.servico img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+
+/* Parte do Texto de Quem Somos */
+
+.servicoTexto {
+    width: 50%;
+
+    float: left;
+    margin-top: 100px;
+    margin-left: 40px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #423628;
+}
+
+.servicoTexto h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #36454F;
+}
+
+.servicoTexto p {
+    margin-bottom: 20px;
+}
+
+
+
+
+/* Botao Fale Conosco */
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #FFFDD0;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+  }
+
+  .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #423628;
+  }
+
+  .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #423628;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+
+  .cta:hover:before {
+    width: 100%;
+    background: #DAA520;
+  }
+
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+
+  .cta:active {
+    transform: scale(0.95);
+  }
+
+
+
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #FFFDD0;  
+    color: #423628;  
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
